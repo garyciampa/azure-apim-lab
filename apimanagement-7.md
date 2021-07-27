@@ -167,7 +167,7 @@ Remember to click **Save**
 <!-- Inbound -->
 <base />
 <send-request mode="new" response-variable-name="secretResponse" timeout="20" ignore-error="false">
-    <set-url>https://{your-apim-instance}.azure.net/secrets/favoritePerson/?api-version=7.0</set-url>
+    <set-url>https://{your-keyvault-base-uri}.azure.net/secrets/favoritePerson/?api-version=7.0</set-url>
     <set-method>GET</set-method>
     <authentication-managed-identity resource="https://vault.azure.net" />
 </send-request>
