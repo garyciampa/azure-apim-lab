@@ -94,6 +94,8 @@ Where:
 
 **RESOURCE-GROUP-NAME:** Resource group where the DEV-APIM-NAME is hosted.
 
+**--fileFolder  <your_clone_devops_respository_filespec>  (NOTE: git clone and create the local repos before executing the dotnet run extract) 
+
 ***For more information on how to run the application and parameters, [go to this page](https://github.com/Azure/azure-api-management-devops-resource-kit/blob/master/src/APIM_ARMTemplate/README.md#extractor).***
 
 After executing the command above, you will see something similar to this:
@@ -107,6 +109,8 @@ Then you see the JSON files extracted:
 Now, push them to your Azure DevOps Repo
 
 ```
+git add *
+git commit -a -m "add extracted *.json files to devops repository
 git push
 ```
 
